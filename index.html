@@ -5,7 +5,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <meta charset="UTF-8">
-  <title>Honores de Ordenanza · Armada Española</title>
+  <title>Honores a Autoridades · Armada Española</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="theme-color" content="#070d1e">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -155,7 +155,7 @@
 
   <script>
     // Forzar purga de caché vieja en móviles
-    const APP_VERSION = 'v1792948575';
+    const APP_VERSION = 'v1792948779';
     if (localStorage.getItem('app_ver') !== APP_VERSION) {
       localStorage.setItem('app_ver', APP_VERSION);
       if ('caches' in window) {
@@ -227,29 +227,20 @@
     <div class="brand" style="justify-content:center;">
       <img src="img/banderaespana.jpg" alt="🇪🇸" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 3 2\'%3E%3Crect width=\'3\' height=\'2\' fill=\'%23c60b1e\'/%3E%3Crect width=\'3\' height=\'1\' y=\'0.5\' fill=\'%23ffc400\'/%3E%3C/svg%3E';" style="width:40px; height:28px; border-radius:4px; object-fit:cover;" />
       <div>
-        <div class="brand-title">Honores de Ordenanza</div>
+        <div class="brand-title">Honores a Autoridades</div>
         <div class="brand-sub">PWA Web App</div>
       </div>
     </div>
   </header>
 
-  <div class="nav-bar">
-    <button class="nav-btn active" id="navAuth" onclick="showView('auth')">👑 Autoridades</button>
-    <button class="nav-btn" id="navIzado" onclick="showView('izado')">🌅 Izado/Arriado</button>
-    <button class="nav-btn" id="navMusica" onclick="showView('musica')">🎺 Música / Himnos</button>
-  </div>
+  
 
   <main>
-    <!-- BANNER PWA IOS / ANDROID -->
     <div class="install-banner" id="pwaBanner">
       <span>📱 <b>Instalar en iPhone/Android:</b> Añadir a pantalla de inicio para usar 100% offline en la mar.</span>
       <span style="cursor:pointer; font-weight:900;" onclick="document.getElementById('pwaBanner').style.display='none'">✕</span>
     </div>
 
-    <!-- ESTADO DE AUDIO -->
-    
-
-    <!-- VISTA 1: PORTALÓN -->
     <div class="view-section active" id="viewAuth">
       <div class="card">
         <div class="card-title">
@@ -393,61 +384,12 @@
         </div>
       </div>
     </div>
-
-    <div class="view-section" id="viewIzado">
-      <div class="card">
-        <div class="card-title">Izado y Arriado de la Bandera</div>
-        <div class="btn-grid">
-          <button class="action-btn primary" onclick="playAudio('audio/CornetaHimnonacionalacorneta-reducido.wav', 'IZADO: Himno Nacional a Corneta')">
-            <span>🌅 IZADO DE BANDERA (08:00h)</span>
-            <span>🇪🇸</span>
-          </button>
-          <button class="action-btn primary" onclick="playAudio('audio/CornetaToquedeOracion.wav', 'ARRIADO: Toque de Oración (Ocaso)')">
-            <span>🌇 ARRIADO AL OCASO (Oración)</span>
-            <span>🇪🇸</span>
-          </button>
-          <button class="action-btn" onclick="playAudio('audio/08Oraciondelanoche.mp3', 'Oración de la Noche')">
-            <span>Oración de la Noche</span>
-            <span>⚓</span>
-          </button>
-          <button class="action-btn" onclick="playAudio('audio/SalveMarinera.mp3', 'Salve Marinera')">
-            <span>Salve Marinera</span>
-            <span>🌊</span>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- VISTA 5: MÚSICA Y HIMNOS -->
-    <div class="view-section" id="viewMusica">
-      <div class="card">
-        <div class="card-title">Música Militar e Himnos de las Fuerzas Armadas</div>
-        <div class="btn-grid">
-          <button class="action-btn" onclick="playAudio('audio/Himno_nacional_de_Espana.mp3', 'Himno Nacional de España (Completo)')">
-            <span>Himno Nacional (Banda)</span>
-            <span>🇪🇸</span>
-          </button>
-          <button class="action-btn" onclick="playAudio('audio/MarchadeInfantes.mp3', 'Marcha de Infantes')">
-            <span>Marcha de Infantes</span>
-            <span>🎺</span>
-          </button>
-          <button class="action-btn" onclick="playAudio('audio/SalveMarinera.mp3', 'Salve Marinera')">
-            <span>Salve Marinera</span>
-            <span>⚓</span>
-          </button>
-          <button class="action-btn" onclick="playAudio('audio/Espania_corto.mp3', 'Marcha Real (Versión Breve)')">
-            <span>Marcha Real (Breve)</span>
-            <span>🇪🇸</span>
-          </button>
-        </div>
-      </div>
-    </div>
   </main>
 
   <footer style="text-align:center; padding:18px 12px; font-size:11px; color:#64748b; line-height:1.8;">
     <div>Honores de Ordenanza · Ceremonial Militar</div>
     <div style="margin-top:6px; color:#94a3b8; font-weight:600;">© TDF 2026</div>
-  <div style="text-align:center; font-size:10px; color:#475569; margin:10px 0;">Versión v1792948575</div>
+  <div style="text-align:center; font-size:10px; color:#475569; margin:10px 0;">Versión v1792948779</div>
 </footer>
 
   <script>

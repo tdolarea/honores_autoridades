@@ -1,4 +1,4 @@
-// SW Honores Autoridades PWA v1792948397
+// SW Honores Autoridades PWA v1792948779
 self.addEventListener('install', e => self.skipWaiting());
 self.addEventListener('activate', e => {
   e.waitUntil(
